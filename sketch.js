@@ -27,6 +27,8 @@ function preload() {
 
 function setup() {
   createCanvas(560, 360);
+  textSize(28);
+  textFont("Arial");
 }
 
 function draw() {
@@ -41,17 +43,28 @@ function draw() {
     image(img6, 0, 0);
   }
 
-push();
-scale(0.5, 0.5)
-  image(img9, 300 + mouseX/10, 180);
-  image(img8, 100 + (mouseX/10), 200);
-pop();
+  push();
+  scale(0.5, 0.5)
+    image(img9, 300 + mouseX/10, 180);
+    image(img8, 100 + (mouseX/10), 200);
+  pop();
 
-image(img9, 300 + mouseX/6, 10);
-image(img8, -300 + mouseX/6, 10);
-image(img9, -140 + mouseX/4, -1000);
-image(img7, 140 + mouseX/5, -60);
-image(img7, -200 + mouseX/4, -50);
-// image(img7, -500 + mouseX/2, -70);
+  image(img9, 300 + mouseX/6, 10);
+  image(img8, -300 + mouseX/6, 10);
+  image(img9, -140 + mouseX/4, -100);
+  image(img7, 140 + mouseX/5, -60);
+  image(img7, -200 + mouseX/4, -50);
+
+  fill(100, 50, 150, 150);
+  stroke(255, 10);
+  strokeWeight(3);
+  text("time", -50 + mouseX/2, 80);
+  text("and", -80 + mouseX, 110);
+  text("tides", -110 + mouseX/2, 140);
+  text("both", -140 + mouseX, 170);
+  text("endlessly", -170 + mouseX/2, 200);
+  text("flow", -200 + mouseX, 230);
+
+  // image(img7, -500 + mouseX/2, -70);
 
 }
